@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
     if(str_len==-1)
         error_handling("read() error");
     
-    cout << " Message from serve: " << message << endl;
+    cout << " Message from server: " << message << endl;
     close(sock);
     return 0;
     
