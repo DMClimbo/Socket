@@ -61,3 +61,11 @@ int main(int argc, char *argv[])
 
 
 }
+
+
+
+void error_handling(char* message)
+{
+    cout << message << endl;
+    exit(1);
+}

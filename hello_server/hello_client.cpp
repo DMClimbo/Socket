@@ -1,6 +1,6 @@
 #include<iostream>
 #include<stdlib.h>
-#include<string>
+#include<string.h>
 #include<unistd.h>
 #include<arpa/inet.h>
 #include<sys/socket.h>
@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
     memset(&serv_addr, 0, sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = inet_addr(argv[1]);
-    serv_addr.sin_port = htons(atio(argv[2]));
+    serv_addr.sin_port = htons(atoi(argv[2]));
 
     if(connect(sock, (sockaddr*)&serv_addr, sizeof(serv_addr))==-1)
         error_handling("connect() error");
@@ -41,4 +41,11 @@ int main(int argc, char* argv[])
     return 0;
     
 
+}
+
+
+void error_handling(char* message)
+{
+    cout << message << endl;
+    exit(1);
 }
