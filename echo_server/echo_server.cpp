@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
             error_handling("accept() error");
 
         else 
-            cout << "Conneted client " << i+1;
+            cout << "Connected client " << i+1  << endl;
         
         while((str_len=read(clnt_sock, message, BUF_SIZE))!=0)
             write(clnt_sock, message, str_len);
