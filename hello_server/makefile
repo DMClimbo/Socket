@@ -5,4 +5,4 @@ hclient: hello_client.cpp
 	g++  -g  -o  hclient  hello_client.cpp 
 
 clean:
-	rm hserver  hclient
+	rm  hserver  hclient
