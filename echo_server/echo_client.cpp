@@ -19,7 +19,7 @@ int main(int argc, char*argv[])
 
     if(argc!=3)
     {
-        cout << "Usage: " << argv[0] << " <IP> <port>";
+        cout << "Usage: " << argv[0] << " <IP> <port>" << endl;
         exit(1);
     }
 

@@ -14,6 +14,11 @@
   >
   > ./eclient   [服务器IP]　9190
 
+- 并发回声服务器
+  > make mpserv
+  >     
+  >./mpserv 9190
+
 - 清除
 
   > make clean
