@@ -9,4 +9,4 @@ epoll:  epoll.cpp
 
 
 clean:
-	rm  select
+	rm  select  epoll
